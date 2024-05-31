@@ -136,8 +136,10 @@ const Page = () => {
               onSubmit={handleSubmit}
               className="flex flex-col gap-6 p-10 bg-[#191919] rounded-xl"
             >
-              <h3 className="text-4xl text-accent">Let's Work Together</h3>
-              <p className="text-white/60">Let's Create something together</p>
+              <h3 className="text-4xl text-accent">Let&apos;s Work Together</h3>
+              <p className="text-white/60">
+                Let&apos;s Create something together
+              </p>
               {/* Input */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <Input

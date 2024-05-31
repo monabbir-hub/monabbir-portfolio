@@ -30,7 +30,7 @@ const Home = () => {
             />
 
             <h1 className="h1">
-              Hello I'm <br />{" "}
+              Hello I&apos;m <br />{" "}
               <span className="text-accent">Monabbir Bhuiyan</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80">

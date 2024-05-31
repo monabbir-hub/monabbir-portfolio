@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 //components
 import Stairs from "./Stairs";
 
-const StairEffeect = () => {
+const StairEffect = () => {
   const pathname = usePathname();
   return (
     <>
@@ -30,4 +30,4 @@ const StairEffeect = () => {
   );
 };
 
-export default StairEffeect;
+export default StairEffect;

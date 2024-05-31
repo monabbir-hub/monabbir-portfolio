@@ -1,5 +1,3 @@
-import path from "path";
-import { title } from "process";
 import { FaGithub, FaLinkedin, FaBehance } from "react-icons/fa";
 
 import {
@@ -189,40 +187,14 @@ export const skills = {
   title: "My Skills",
   description: "",
   skillList: [
-    {
-      icon: <FaHtml5 />,
-      name: "html 5",
-    },
-    {
-      icon: <FaCss3 />,
-      name: "css 3",
-    },
-    {
-      icon: <FaJs />,
-      name: "javascript",
-    },
-    {
-      icon: <FaReact />,
-      name: "react.js",
-    },
-
-    {
-      icon: <SiNextdotjs />,
-      name: "next.js",
-    },
-    {
-      icon: <FaNodeJs />,
-      name: "node.js",
-    },
-
-    {
-      icon: <SiTailwindcss />,
-      name: "tailwind css",
-    },
-    {
-      icon: <FaFigma />,
-      name: "figma",
-    },
+    { icon: <FaHtml5 />, name: "html 5", key: "html5" },
+    { icon: <FaCss3 />, name: "css 3", key: "css3" },
+    { icon: <FaJs />, name: "javascript", key: "javascript" },
+    { icon: <FaReact />, name: "react.js", key: "reactjs" },
+    { icon: <SiNextdotjs />, name: "next.js", key: "nextjs" },
+    { icon: <FaNodeJs />, name: "node.js", key: "nodejs" },
+    { icon: <SiTailwindcss />, name: "tailwind css", key: "tailwindcss" },
+    { icon: <FaFigma />, name: "figma", key: "figma" },
   ],
 };
 
@@ -231,11 +203,13 @@ export const info = [
     icon: <FaPhoneAlt />,
     title: "Phone",
     description: "+1 (647) 336-7169",
+    key: "phone",
   },
   {
     icon: <FaEnvelope />,
     title: "Email",
     description: "monabbir.179@gmail.com",
+    key: "email",
   },
 ];
 
@@ -246,10 +220,10 @@ export const projects = [
     des: "Experience the perfect blend of creativity and technology with Code & Crust. Our platform highlights our expertise in developing visually stunning and highly functional websites for a diverse range of industries. From dynamic startups to established enterprises, Code & Crust brings your digital presence to life with bespoke designs and interactive features that engage and delight your audience. Let us elevate your brand and drive growth with customized digital solutions that leave a lasting impression.",
     img: "/cc.svg",
     iconLists: [
-      <FaReact />,
-      <SiTailwindcss />,
-      <SiTypescript />,
-      <TbBrandThreejs />,
+      { icon: <FaReact />, key: "react" },
+      { icon: <SiTailwindcss />, key: "tailwindcss" },
+      { icon: <SiTypescript />, key: "typescript" },
+      { icon: <TbBrandThreejs />, key: "threejs" },
     ],
     link: "https://www.codeandcrust.org",
   },
@@ -258,7 +232,11 @@ export const projects = [
     title: "Bangla Diners",
     des: "Immerse yourself in the rich and diverse flavors of Bangladeshi cuisine with Bangla Diners. This vibrant platform showcases our expertise in creating a visually appealing and user-friendly website that celebrates the culinary heritage of Bangladesh. From detailed menus to engaging blog posts and easy reservation options, Bangla Diners provides a seamless experience for food enthusiasts and restaurant-goers alike. Discover the perfect blend of tradition and modernity, as we bring the essence of Bangladeshi dining to the digital world.",
     img: "/bangla.svg",
-    iconLists: [<FaHtml5 />, <FaCss3 />, <FaJs />],
+    iconLists: [
+      { icon: <FaHtml5 />, key: "html5" },
+      { icon: <FaCss3 />, key: "css3" },
+      { icon: <FaJs />, key: "javascript" },
+    ],
     link: "https://bangladiners.ca/",
   },
   {
@@ -267,10 +245,10 @@ export const projects = [
     des: "Immerse yourself in the world of custom apparel with Project T-Shirt Design. This innovative platform showcases our expertise in creating a visually appealing and user-friendly website that empowers users to design their own unique t-shirts. From interactive design tools to real-time previews and responsive design, Project T-Shirt Design offers a seamless experience for both amateur and professional designers. Discover the perfect blend of creativity and technology as we bring your t-shirt design ideas to life in the digital world.",
     img: "/tshirt.svg",
     iconLists: [
-      <FaReact />,
-      <SiTailwindcss />,
-      <SiTypescript />,
-      <TbBrandThreejs />,
+      { icon: <FaReact />, key: "react" },
+      { icon: <SiTailwindcss />, key: "tailwindcss" },
+      { icon: <SiTypescript />, key: "typescript" },
+      { icon: <TbBrandThreejs />, key: "threejs" },
     ],
     link: "https://project-tshirt-design.vercel.app/",
   },

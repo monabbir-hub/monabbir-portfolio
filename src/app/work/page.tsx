@@ -6,6 +6,7 @@ import { projects } from "@/constants";
 import { PinContainer } from "../../components/ui/Pin";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const Work = () => {
   return (
@@ -44,8 +45,8 @@ const Work = () => {
                     className="relative w-full h-full overflow-hidden lg:rounded-3xl"
                     style={{ backgroundColor: "#191919" }}
                   >
-                    <img src="/bg.png" alt="bgimg" />
-                    <img
+                    <Image src="/bg.png" alt="bgimg" />
+                    <Image
                       src={item.img}
                       alt="cover"
                       className="z-10 absolute bottom-0"
@@ -69,7 +70,7 @@ const Work = () => {
 
                 <div className="flex items-center justify-between mt-7 mb-3">
                   <div className="flex items-center">
-                    {item.iconLists.map((Icon, index) => (
+                    {item.iconLists.map(({ icon }, index) => (
                       <div
                         key={index}
                         className="border border-white/[.2] rounded-full bg-black lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center"
@@ -77,7 +78,7 @@ const Work = () => {
                           transform: `translateX(-${5 * index + 2}px)`,
                         }}
                       >
-                        <div className="text-accent">{Icon}</div>
+                        <div className="text-accent">{icon}</div>
                       </div>
                     ))}
                   </div>

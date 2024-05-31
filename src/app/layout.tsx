@@ -5,7 +5,7 @@ import "./globals.css";
 //components
 import Header from "@/components/Header";
 
-import StairEffeect from "@/components/StairEffeect";
+import StairEffect from "@/components/StairEffect";
 import PageTransition from "@/components/PageTransition";
 
 const font = League_Spartan({
@@ -28,7 +28,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={font.className}>
         <Header />
-        <StairEffeect />
+        <StairEffect />
         <PageTransition>{children}</PageTransition>
       </body>
     </html>
